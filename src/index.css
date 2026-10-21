@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+
+  /* Caffeine Club Color System */
+  --color-cream-50: #FDFBF7;
+  --color-cream-100: #F4EFE6;
+  --color-cream-200: #E8DECE;
+  --color-cream-300: #DDD0BC;
+  
+  --color-coffee-950: #1A120B;
+  --color-coffee-900: #261B13;
+  --color-coffee-800: #3B2A1E;
+  --color-coffee-700: #553D2C;
+  --color-coffee-600: #6D5D53;
+  --color-coffee-500: #8E7A6E;
+  --color-coffee-100: #E6DFDA;
+
+  --color-caramel-600: #B25D2D;
+  --color-caramel-500: #C86D3B;
+  --color-caramel-400: #E89F67;
+  --color-caramel-300: #F3BC92;
+
+  --color-sage-700: #3B5F43;
+  --color-sage-600: #4E7A58;
+  --color-sage-100: #E3EDE5;
+
+  --color-terracotta-700: #A82E22;
+  --color-terracotta-600: #C0392B;
+  --color-terracotta-100: #FCE8E6;
+}
+
+/* Custom Base Rules & Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FDFBF7;
+  color: #1E1510;
+  overflow-x: hidden;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #C86D3B;
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar for sleek café UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4EFE6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6D5D53;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B2A1E;
+}
